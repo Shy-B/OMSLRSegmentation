@@ -40,7 +40,7 @@ def draw(exp_no, seg_cn, exp_type, filename):
             plt.vlines(pvt-0.5, min(tsinfo), max(tsinfo), 'r')
         else:
             plt.vlines(pvt-1, min(tsinfo), max(tsinfo), 'r')
-    
+    print(filename)
     plt.savefig(filename)
 
 def main():

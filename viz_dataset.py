@@ -64,7 +64,7 @@ def simu():
 def simul():
     makedir('dataset/simul/')
 
-    simul = load_dataset('simul.txt')[0]
+    simul = load_dataset('../dataset/simul.txt')[0]
     plt.figure(figsize=(4, 3))
     plt.plot(simul)
     plt.tight_layout()

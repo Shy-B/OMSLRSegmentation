@@ -73,7 +73,7 @@ def iter_sigma(x:list, get_mean:bool=True, get_alpha_beta=True):
     else:
         return sigma
 
-def omslr_gmse(x:list, max_k:int, sigma:numpy):
+def omslr_gmse(x:list, max_k:int, sigma:np.array):
     '''
     omslr_gmse(x:list, max_k:int, sigma:numpy.array)
     Optimal Multi-Segmentation Linear Regression with global mean-square-error policy:
@@ -123,7 +123,7 @@ def omslr_gmse(x:list, max_k:int, sigma:numpy):
     return gamma, rho
 
 
-def omslr_minmax(x:list, max_k:int, sigma:numpy.array):
+def omslr_minmax(x:list, max_k:int, sigma:np.array):
     '''
     omslr_minmax(x:list, max_k:int, sigma:numpy.array)
     Optimal Multi-Segmentation Linear Regression with min-max policy:
